@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.2.19)  31 JAN 2024 10:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.2.19)  31 JAN 2024 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,25 +761,25 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
 
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<p1.png, id=6, 1021.8978pt x 276.7941pt>
+<p1.png, id=7, 1021.8978pt x 276.7941pt>
 File: p1.png Graphic file (type png)
 <use p1.png>
-Package pdftex.def Info: p1.png  used on input line 66.
+Package pdftex.def Info: p1.png  used on input line 71.
 (pdftex.def)             Requested size: 510.94765pt x 138.3967pt.
 
-Overfull \hbox (41.19266pt too wide) in paragraph at lines 66--67
+Overfull \hbox (41.19266pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
@@ -807,7 +807,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.70 \clearpage
+l.75 \clearpage
                 <./p1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -838,13 +838,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
 [5]
-<3b.png, id=51, 643.203pt x 510.9489pt>
+<3b.png, id=52, 643.203pt x 510.9489pt>
 File: 3b.png Graphic file (type png)
 <use 3b.png>
-Package pdftex.def Info: 3b.png  used on input line 185.
+Package pdftex.def Info: 3b.png  used on input line 190.
 (pdftex.def)             Requested size: 482.40106pt x 383.21072pt.
 
-Overfull \hbox (12.64607pt too wide) in paragraph at lines 185--186
+Overfull \hbox (12.64607pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
@@ -872,7 +872,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.192 		\end{tcolorbox}
+l.197 		\end{tcolorbox}
                         <./3b.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -883,10 +883,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
 [8]
-<p4.png, id=82, 462.528pt x 346.896pt>
+<p4.png, id=83, 462.528pt x 346.896pt>
 File: p4.png Graphic file (type png)
 <use p4.png>
-Package pdftex.def Info: p4.png  used on input line 210.
+Package pdftex.def Info: p4.png  used on input line 215.
 (pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
 
 
@@ -904,10 +904,10 @@ Package rerunfilecheck Info: File `homework_1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21407 strings out of 475385
- 404467 string characters out of 2776907
+ 21408 strings out of 475385
+ 404483 string characters out of 2776907
  728939 words of memory out of 3000000
- 42374 multiletter control sequences out of 15000+600000
+ 42375 multiletter control sequences out of 15000+600000
  486061 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,11n,80p,1042b,854s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -929,9 +929,9 @@ wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
 es/utmb8a.pfb><C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
 es/utmr8a.pfb><C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on homework_1.pdf (9 pages, 288631 bytes).
+Output written on homework_1.pdf (9 pages, 289340 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
