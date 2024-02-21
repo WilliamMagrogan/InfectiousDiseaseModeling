@@ -35,6 +35,15 @@
 
 \newcommand{\Q}[1]{\footnote{\textcolor{blue}{#1}}}
 
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{category} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{mapto} = [thick, ->, >=stealth]
+
+
+
 \begin{document}
 
 \lhead{{\bf Mathematical \& Computational Modeling of Infectious Diseases \\ 
@@ -116,26 +125,93 @@ Homework 2}}
 		"Good question, depending on the suite of models used to estimate, the number of people infected usually increases with, and is very sensitive to, $R_0$. The quality of of the vaccination will affect the estimate a bit differently as well. All-or-nothing models confer absolute immunity, and those vaccinated can never contribute to the total infections, and conversely, with a leaky model, all vaccinated are still liable to contribute to the load."
 	\end{tcolorbox}
 	\item After the meeting, your chair comes up to you, and in a way you cannot refuse, kindly says, ``I liked what you said about how we might think about the differences between the different vaccine models, and how they might interact with $R_0$ in our little community of $300,000$. Can I ask you to write up a quick one-page summary with a few graphs to show how much the model does or doesn't matter in our scenarios?''  OOOOF you think: it is the future and so you were hoping to go electric-snowboarding, but this one-pager is important. [Write the one-pager that helps {\it a mathematically savvy person from the general public} to understand your projections about infections in all three $R_0$ scenarios and using both vaccine models. Be sure to include an executive summary sentence at the top of the report so your chair and read it aloud at a press conference if someone asks!]\footnote{Here is a good opportunity to apply what you've learned in the previous problem: what step size is sufficient?}
+		\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{R03.png}
+		\label{fig:r03}
+		\caption{Comparison of models for a single starting infection, $R_0=3, \gamma=\frac{1}{14}$.}
+	\end{figure}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{R05.png}
+		\label{fig:r05}
+		\caption{Comparison of models for a single starting infection, $R_0=5, \gamma=\frac{1}{14}$.}
+	\end{figure}
 	\begin{tcolorbox}
 		\textbf{Solution}:
+		When considering and incoming epidemic, two basic vaccination models produce identical predictions for the herd immunity threshold, but different predictions for the total infection load over the course of the epidemic wave. In the following, we consider two variations on a compartmental model in which every person is exactly one of the following (SIRV model): Susceptible, Infected, Recovered, or Vaccinated. We will further assume that full community vaccination is achieved prior to the arrival of the first infection into the community. The two variations considered suppose that either a vaccination confers complete immunity to a fraction of people according to the vaccine efficacy (VE) called the SIRV-ANM, and a variation where all vaccinations confer partial immunity and instead a fraction of infections per person are warded off (Leaky SIRV).
+		
+		\textbf{SIRV-ANM}:
+		This model is defined by a set of five differential equations, but for now we will only focus on the infection rate, that is whether or not the number of infected people is increasing or deceasing. The herd immunity threshold (HIT) is defined as the condition where infections are no longer increasing. The infection rate equation for the SIRV-ANM is 
+		\begin{equation*}
+			\dot{I}=\frac{\beta}{N}SI-\gamma I + \frac{\beta}{N} I V_{\emptyset}
+		\end{equation*}
+		with $\beta$ being the incidence rate and $\gamma$ being the recovery rate. We need $\dot{I}<0$ for infections to decrease and hence herd immunity. This occurs when $S+V_{\emptyset}<\frac{\gamma N}{\beta}$. Since $V_\emptyset$ is the population who were vaccinated and got unlucky, this chances to $S+V_\emptyset=(N-1)(1-vVE)$, so we need that $VE>\frac{1}{v}\left(1-\frac{\gamma}{\beta}\frac{N}{N-1}\right)=\frac{1}{v}\left(1-\frac{1}{R_0}\frac{N}{N-1}\right)$ as our herd immunity threshold. Through some further analysis we can determine the infection load, that is the number of people in the eventually recovered category, $r_\infty$ is $r_\infty = \frac{1}{R_0}\log\left(\frac{1-(1-VE)v}{1-r_\infty-vVE}\right)$.\\ \\
+		\textbf{Leaky SIRV}:  The analysis for the Leaky SIRV model yields an identical prediction for HIT, by a slightly different set of equations for the total infection load as
+		\begin{align*}
+			r_\infty&=\frac{1}{R_0}\log\left(\frac{1-v_0}{1-r_\infty-v_\infty}\right)\\
+			v_\infty&=v_0\left(\frac{1-v_\infty-r_\infty}{1-v_0}\right)^{-\beta(1-VE)}
+		\end{align*}
+		where $v_0$ is the initial fraction of people vaccinated. \\ \\
+		\textbf{Simulations}: Fig. \ref{fig:r03} shows a comparison between the two models for $R_0=3$. A few key differences are the difference in total infection load, where the leaky model predicts almost $10,000$ fewer infections than the all or nothing. The leaky model also has a delayed, and smaller peak of infections, and the 'end' of the wave occurs later for the leaky model than the All-or-Nothing model. For $R_0=5$ in Fig. \ref{fig:r05}, the leaky model instead predicts an overall greater number of infections over the course of the epidemic. So the high level conclusion is that even though the herd immunity threshold is identical in both cases, the total infection load and duration are sensitive to the model used and $R_0$.
 	\end{tcolorbox}
+
+
+
 \end{enumerate}
 
 \clearpage
 \item (Grad / EC): The goal of this problem is to get you to think about additional flavors of models that build on the SIR model backbone, and practice writing down flow diagrams and systems of differential equations. For each of the following situations please (i) draw a flow diagram with the SIR backbone in black, (ii) include any modifications in a second color, and (iii) write out your differential equations using the same color scheme. 
 \begin{enumerate}
 	\item Suppose that we want to model the possibility that the natural history of infection means that a person is infected {\it but not infectious} before becoming infected-and-infectious. Let the typical {\it latent} period---the time between exposure and infectiousness---last for $q$ days. Use the letter $E$ for this new compartment. Draw a flow diagram for the non-normalized system, and write a set of corresponding differential equations. 
+	
 	\begin{tcolorbox}
-		\textbf{Solution}:
+		\textbf{Solution}: With the diagram given in Fig. \ref{fig:3a}, we write down 
+		\begin{align*}
+			\dot{S} &=-\frac{\beta}{N}SI\\
+			\dot{E} &=\frac{\beta}{N}SI-\frac{1}{q}E\\
+			\dot{I} &=\frac{1}{q}E-\gamma I\\
+			\dot{R} &= \gamma I
+		\end{align*}
 	\end{tcolorbox}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{hw2p3a.png}
+		\caption{Problem 3a solution.}
+		\label{fig:3a}
+	\end{figure}
 	\item Suppose that we want to model Hospitalization, with the following assumption: Infected folks either recover directly {\it or} they are hospitalized first and then recover. Let the direct recovery rate be $\gamma$, and suppose that there are 4 direct recoveries for every 1 hospitalization. Let the typical duration of a hospitalization be $\delta$ days. Use the letter $h$ for the hospitalized compartment. Draw a flow diagram for the normalized system, and write a set of corresponding differential equations. You should assume that folks in the hospital do not come into contact with anyone else during their hospital stay.
 	\begin{tcolorbox}
-		\textbf{Solution}:
+		\textbf{Solution}: Using the solution in Fig. \ref{fig:3b}, we have
+		\begin{align*}
+			\dot{s} &=-\beta s i\\
+			\dot{e} &=\beta s i-\gamma i -\frac{1}{4} \gamma i\\
+			\dot{h} &= \frac{1}{4}\gamma i - \frac{1}{q}h\\
+			\dot{r} &= \gamma I + \frac{1}{q}h
+		\end{align*}
 	\end{tcolorbox}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{hw2p3b.png}
+		\caption{Problem 3b solution.}
+		\label{fig:3b}
+	\end{figure}
 	\item Suppose that we want to model an infectious disease that afflicts a growing population of bacteria, such that the infection follows an SIR model, the bacteria grow according to a logistic growth model with intrinsic growth rate $\alpha$ and carrying capacity $K$. Let all bacteria reproduce, but suppose that susceptible and recovered bacteria produce susceptible progeny, while infected bacteria produce infected progeny. The carrying capacity is shared by all three bacteria. 
 	\begin{tcolorbox}
-		\textbf{Solution}:
+		\textbf{Solution}: Following the diagram in Fig. \ref{fig:3c}, we have
+		\begin{align*}
+			\dot{S} &=-\frac{\beta}{N}SI + \alpha (S+R)(K-N)\\
+			\dot{I} &=\frac{\beta}{N}SI-\gamma I + \alpha I (K-N)\\
+			\dot{R} &= \gamma I\\
+			N &= S+I+R
+		\end{align*}
 	\end{tcolorbox}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{hw2p3c.png}
+		\caption{Problem 3c solution.}
+		\label{fig:3c}
+	\end{figure}
 \end{enumerate}
 
 \end{enumerate}

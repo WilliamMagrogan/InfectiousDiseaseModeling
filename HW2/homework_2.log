@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.2.19)  6 FEB 2024 21:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.2.19)  19 FEB 2024 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,8 +692,87 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@totalupperbox=\box74
 \tcb@totallowerbox=\box75
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-8.
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex)
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count306
+\pgfplotmarksize=\dimen260
+)
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
+\tikz@figbox=\box76
+\tikz@figbox@bg=\box77
+\tikz@tempbox=\box78
+\tikz@tempbox@bg=\box79
+\tikztreelevel=\count307
+\tikznumberofchildren=\count308
+\tikznumberofcurrentchild=\count309
+\tikz@fig@count=\count310
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count311
+\pgfmatrixcurrentcolumn=\count312
+\pgf@matrix@numberofcolumns=\count313
+)
+\tikz@expandcount=\count314
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen269
+))
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+7.
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -701,44 +780,44 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count306
-\l__pdf_internal_box=\box76
+\l__color_backend_stack_int=\count315
+\l__pdf_internal_box=\box80
 ) (homework_2.aux)
 \openout1 = `homework_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen258
-\scratchbox=\box77
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen259
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count316
+\scratchdimen=\dimen270
+\scratchbox=\box81
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen271
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks48
 )
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -750,24 +829,24 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 38.
+Package hyperref Info: Link coloring ON on input line 47.
  (homework_2.out) (homework_2.out)
 \@outlinefile=\write4
 \openout4 = `homework_2.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-7.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+6.
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
 
 
 (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -776,7 +855,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <hw2p1.png, id=6, 1342.0539pt x 739.3221pt>
 File: hw2p1.png Graphic file (type png)
 <use hw2p1.png>
-Package pdftex.def Info: hw2p1.png  used on input line 65.
+Package pdftex.def Info: hw2p1.png  used on input line 74.
 (pdftex.def)             Requested size: 469.7259pt x 258.7666pt.
 
 
@@ -790,18 +869,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/wrmag/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 []\OT1/ptm/b/n/10.95 Solution\OT1/ptm/m/n/10.95 : Code pro-vided at [][]here[][
 ] un-der the HW2 di-rec-tory,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 \OT1/ptm/m/n/10.95 or copy/paste the link into the web browser of your choice:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 \OT1/ptm/m/n/10.95 https://github.com/WilliamMagrogan/InfectiousDiseaseModeling
  and nav-i-gate to
  []
@@ -818,7 +897,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <hw2p1c.png, id=34, 462.528pt x 346.896pt>
 File: hw2p1c.png Graphic file (type png)
 <use hw2p1c.png>
-Package pdftex.def Info: hw2p1c.png  used on input line 83.
+Package pdftex.def Info: hw2p1c.png  used on input line 92.
 (pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
 
@@ -850,6 +929,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5
 
 ]
+<R03.png, id=56, 1342.0539pt x 739.3221pt>
+File: R03.png Graphic file (type png)
+<use R03.png>
+Package pdftex.def Info: R03.png  used on input line 130.
+(pdftex.def)             Requested size: 536.81206pt x 295.7236pt.
+
+Overfull \hbox (67.05707pt too wide) in paragraph at lines 130--132
+ [][] 
+ []
+
+<R05.png, id=57, 1342.0539pt x 739.3221pt>
+File: R05.png Graphic file (type png)
+<use R05.png>
+Package pdftex.def Info: R05.png  used on input line 136.
+(pdftex.def)             Requested size: 536.81206pt x 295.7236pt.
+
+Overfull \hbox (67.05707pt too wide) in paragraph at lines 136--138
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.22453pt, for example:
@@ -867,20 +976,85 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
-[7
+[7 <./R03.png>]
 
-] (homework_2.aux)
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[8 <./R05.png>]
+Overfull \vbox (89.36234pt too high) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[9]
+<hw2p3a.png, id=86, 676.02562pt x 125.71968pt>
+File: hw2p3a.png Graphic file (type png)
+<use hw2p3a.png>
+Package pdftex.def Info: hw2p3a.png  used on input line 179.
+(pdftex.def)             Requested size: 338.01198pt x 62.85968pt.
+<hw2p3b.png, id=88, 529.22719pt x 283.0575pt>
+File: hw2p3b.png Graphic file (type png)
+<use hw2p3b.png>
+Package pdftex.def Info: hw2p3b.png  used on input line 195.
+(pdftex.def)             Requested size: 264.61295pt x 141.5284pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[10
+
+ <./hw2p3a.png>]
+<hw2p3c.png, id=99, 694.09312pt x 319.94531pt>
+File: hw2p3c.png Graphic file (type png)
+<use hw2p3c.png>
+Package pdftex.def Info: hw2p3c.png  used on input line 211.
+(pdftex.def)             Requested size: 347.04572pt x 159.97226pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[11 <./hw2p3b.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[12 <./hw2p3c.png>] (homework_2.aux)
 Package rerunfilecheck Info: File `homework_2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21390 strings out of 475385
- 404179 string characters out of 2776907
- 725077 words of memory out of 3000000
- 42362 multiletter control sequences out of 15000+600000
+ 24976 strings out of 475385
+ 492073 string characters out of 2776907
+ 809540 words of memory out of 3000000
+ 45883 multiletter control sequences out of 15000+600000
  486061 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,11n,80p,1080b,690s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 83i,12n,80p,1080b,690s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -890,12 +1064,14 @@ Here is how much of TeX's memory you used:
 nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/wrmag/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wrmag/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wrmag/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wrmag/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/wrmag/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on homework_2.pdf (7 pages, 219094 bytes).
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/wrmag/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
+/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users
+/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users
+/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on homework_2.pdf (12 pages, 471844 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
