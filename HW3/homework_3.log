@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.2.19)  18 MAR 2024 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.2.19)  18 MAR 2024 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,10 +787,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+\OT1/ptm/m/n/10.95 Code used to gen-er-ate the plot is on my github at
  []
 
+<problem2c.png, id=29, 462.528pt x 346.896pt>
+File: problem2c.png Graphic file (type png)
+<use problem2c.png>
+Package pdftex.def Info: problem2c.png  used on input line 158.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.22453pt, for example:
@@ -800,14 +805,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
+<problem2d.png, id=39, 1342.0539pt x 739.3221pt>
+File: problem2d.png Graphic file (type png)
+<use problem2d.png>
+Package pdftex.def Info: problem2d.png  used on input line 171.
+(pdftex.def)             Requested size: 402.61928pt x 221.79834pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -817,21 +819,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
+[4 <./problem2c.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.22453pt, for example:
@@ -840,9 +828,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
-[5
-
-]
+[5 <./problem2d.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.22453pt, for example:
@@ -852,11 +838,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
 
 [6]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-11.
- (C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.22453pt, for example:
@@ -867,18 +848,59 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7
 
+]
+<problem3ec.png, id=69, 462.528pt x 346.896pt>
+File: problem3ec.png Graphic file (type png)
+<use problem3ec.png>
+Package pdftex.def Info: problem3ec.png  used on input line 237.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[9 <./problem3ec.png>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+45.
+
+(C:\Users\wrmag\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.22453pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.22453pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.22453pt}.
+
+[10
+
 ] (homework_3.aux)
 Package rerunfilecheck Info: File `homework_3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21338 strings out of 475385
- 403394 string characters out of 2776907
+ 21373 strings out of 475385
+ 403999 string characters out of 2776907
  735635 words of memory out of 3000000
- 42315 multiletter control sequences out of 15000+600000
+ 42343 multiletter control sequences out of 15000+600000
  486576 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,17n,80p,826b,844s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 83i,17n,80p,826b,852s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -896,9 +918,9 @@ C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb
 ><C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Users/wrmag/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on homework_3.pdf (7 pages, 178368 bytes).
+Output written on homework_3.pdf (10 pages, 289775 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

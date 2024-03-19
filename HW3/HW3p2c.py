@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 PARAMS = {
     "groups": 4,
      "recovery_rate": 3,
-     "contact_rate": 0.5,
+     "contact_rate": 0.45,
      "susceptibility_probabilities": [1,2,3,4],
      "groupwise_population": [1000, 1000, 1000, 1000]
      }
@@ -88,4 +88,24 @@ for group in range(mgi_model.groups):
 ax.set_xlabel("Time, $t$ [s]")
 ax.legend()
 
+plt.show()
+
+# get and plot susceptabilities
+inf = mgi_solution[:, :mgi_model.groups]
+recv = mgi_solution[:, mgi_model.groups:]
+sus = 1-inf-recv
+weighted_p = np.sum(sus * mgi_model.susceptibility_probabilities, axis=1)/np.sum(sus, axis=1)
+
+fig, axs = plt.subplots(1, 2)
+
+axs[1].plot(time.array, weighted_p[:-1])
+axs[1].set_xlabel("Time, $t$ [s]")
+axs[1].set_ylabel(r"Weighted susceptability, $\overline{p}$")
+
+labels = ["$s_1$", "$s_2$", "$s_3$", "$s_4$"]
+for group in range(mgi_model.groups):
+    axs[0].plot(time.array, sus[:, group][:-1], 'b', alpha=1/(mgi_model.groups - group)**2, label=labels[group])
+
+axs[0].set_xlabel("Time, $t$ [s]")
+axs[0].legend()
 plt.show()

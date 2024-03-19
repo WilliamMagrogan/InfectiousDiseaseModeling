@@ -151,8 +151,12 @@ Consider a population with four equal-sized groups, numbered $1, 2, 3, 4$. Suppo
 	
 	\begin{tcolorbox}[breakable]
 		\textbf{Solution}:\\
-		
+		Code used to generate the plot is on my github at https://github.com/WilliamMagrogan/InfectiousDiseaseModeling. 
 	\end{tcolorbox}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.7]{problem2c.png}
+	\end{figure}
 	
 	\item Define the average relative susceptibility among the susceptibles at any point in time $\bar{p}(t)$ as
 	$$\bar{p}(t) = \frac{\displaystyle \sum_{i=1}^4 p_i\,s_i(t)}{\displaystyle \sum_{i=1}^4 s_i(t)}\ .$$
@@ -160,17 +164,26 @@ Consider a population with four equal-sized groups, numbered $1, 2, 3, 4$. Suppo
 	
 	\begin{tcolorbox}[breakable]
 		\textbf{Solution}:\\
-		
+		Code to produce is again found on github.
 	\end{tcolorbox}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.3]{problem2d.png}
+	\end{figure}
 	
 	\item Comment on what you observe in the plots, and explain the reason for the patterns in words that a high school student could understand.
 	
 	\begin{tcolorbox}[breakable]
 		\textbf{Solution}:\\
-		
+		We see that for the susceptible populations stabilize according to their risk, that is the most at risk one has the least uninfected members and the least at risk one has the most uninfected members. In the effective mean susceptibility plot, we note that at the beginning, it starts at $2.5$, the mean of $[1, 2, 3, 4]$ as expected since all the susceptible populations have concentration near $1$. As the epidemic progresses, and the pool or susceptible people is composed of more low susceptibility people and fewer high susceptibility people, the effective susceptibility decreases until saturation is reached at a weighted mean of their saturated susceptibilities. 
 	\end{tcolorbox}
 	
 	\item[Extra Credit] Reflect on these plots in the context of the COVID-19 pandemic. What lessons are there to be drawn from the relationship between an epidemic wave and different groups with different susceptibilities?
+	
+	\begin{tcolorbox}[breakable]
+		\textbf{Solution}:\\
+		One of the main commentaries that was discussed during the COVID-19 pandemic was regarding the role of essential workers, those who were required to continue working and likely interacting with individuals on a regular basis. The immuno-compromised were another frequently discussed group. Both of these, for different reasons, can be considered their own groups for purposes of modeling. The immuno-compromised because of their higher susceptibility on a per-contact basis, and the essential workers due to their inherent higher contact rate. Understanding the needs and unique behaviors and susceptibilities of these respective groups is critical to good modeling and robust public policy.
+	\end{tcolorbox}
 \end{enumerate}
 \clearpage
 
@@ -187,6 +200,19 @@ Note: You can find Python code to draw from a negative binomial with the $R_0$ a
 	
 	\begin{tcolorbox}[breakable]
 		\textbf{Solution}:\\
+		Here we take, for practicality sake, the assumption that if a branching process does not die out in fewer than $5$ generations, it continues forever. Then, running $10,000$ simulations at each parameter set, the probability that the outbreak does not die out, $q$, is estimated by 
+		\begin{equation*}
+			q \sim 1 - \frac{\text{count of finite time die-outs}}{\text{simulation runs}}.
+		\end{equation*}
+		\begin{center}
+			\begin{tabular}{|c | c|}
+				$k$ & Estimate of $q$\\
+				0.1&0.167\\
+				0.5&0.548\\
+				1.0&0.670\\
+				5.0&0.878\\
+			\end{tabular}
+		\end{center}
 		
 	\end{tcolorbox}
 	
@@ -194,6 +220,8 @@ Note: You can find Python code to draw from a negative binomial with the $R_0$ a
 	
 	\begin{tcolorbox}[breakable]
 		\textbf{Solution}:\\
+		There is a clear positive relationship between $k$ and the estimate of $q$, and subsequently a negative relationship between $k$ and $p$. Intuitively, this tells us that as $k\rightarrow \infty$, and the negative binomial approaches a Poisson distribution, the probability of a finite time die-out drops precipitously to $0$.\\
+		This can be thought of in terms of superspreading. In a superspreading scenario, a small handful of individuals are responsible for the majority of secondary contacts. Lower $k$ means the superspreaders donimate the secondary infections even more. Then, one can thing of an infinite outbreak occuring if you hit one of the superspreaders. Now, there is a competing effect: will an infection reach a superspreader and become massive or die out before it gets there. So, for very low $k$, the number of superspreaders is low, and the number of connections to reach them will be increasingly low. So, smaller $k$ means a mass outbreak is less likely to happen, but also, that it will likely be even bigger.
 		
 	\end{tcolorbox}
 	
@@ -201,8 +229,14 @@ Note: You can find Python code to draw from a negative binomial with the $R_0$ a
 	
 	\begin{tcolorbox}[breakable]
 		\textbf{Solution}:\\
-		
+		Here we take $k=0.1$. We have plotted, the data as a histogram on a logscale. Note, due to the restriction of no outbreaks greater than $5$ generations, there are likely outbreaks of a greater size than shown. \\
+		From the data, we can see that the size of the largest outbreaks seen is just shy of $10^2=100$. Further, the data does not appear to be linear in log-space, which indicates it is probably not a simple power law relationship between outbreak size and its probability of happening.
 	\end{tcolorbox}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.7]{problem3ec.png}
+	\end{figure}
+
 	
 \end{enumerate}
 
