@@ -82,31 +82,31 @@ nb_variance = 100
 nb_r = nb_mean**2 / (nb_variance - nb_mean)
 nb_p = nb_mean/nb_variance
 yule_rho = 2
-beta_alpha = 200
+beta_alpha = 20
 beta_beta = 3
-vaccination_effectiveness = 0
-vaccination_rate = 0
+vaccination_effectiveness = .8
+vaccination_rate = .2
 
 contact_distribution = stats.yulesimon(yule_rho)
 infectiousness_distribution = stats.beta(beta_alpha, beta_beta)
 
 # Heatmap of r0 against infectiousness
 generation_buffer = np.zeros((RUN_BATCH_SIZE,6))
-alphas = range(12, 20)
-buff = np.empty_like(alphas)
+ves = np.linspace(0, 0.8, 10)
+buff = np.empty_like(ves)
 yule_roots = []
 yule_r0 = []
 nb_roots = []
 nb_r0 = []
 yule_finite_outbreak_sizes = []
 nb_finite_outbreak_sizes = []
-for ia, a in enumerate(alphas):
+for ive, ve in enumerate(ves):
     model_parameters = {
     "contact_distribution":contact_distribution,
-    "infectiousness_distribution":stats.beta(a, beta_beta),
-    "vaccination_effectiveness":vaccination_effectiveness,
+    "infectiousness_distribution":stats.beta(beta_alpha, beta_beta),
+    "vaccination_effectiveness": ve,
     "vaccination_rate": vaccination_rate,
-    "vaccination_type": "aon",
+    "vaccination_type": "leaky",
     "max_iterations": 5
     }
 
@@ -131,9 +131,9 @@ for ia, a in enumerate(alphas):
     yule_finite_outbreak_sizes.append(len(yfos)/RUN_BATCH_SIZE)
 
     model_parameters = {
-    "contact_distribution":stats.nbinom(nb_r, nb_p),
-    "infectiousness_distribution":stats.beta(a, beta_beta),
-    "vaccination_effectiveness":vaccination_effectiveness,
+    "contact_distribution":contact_distribution,
+    "infectiousness_distribution":stats.beta(beta_alpha, beta_beta),
+    "vaccination_effectiveness":ve,
     "vaccination_rate": vaccination_rate,
     "vaccination_type": "aon",
     "max_iterations": 5
@@ -161,14 +161,14 @@ for ia, a in enumerate(alphas):
 
 
 
-plt.plot(alphas, yule_roots, 'ro', label="Yule Contacts")
+plt.plot(ves, yule_roots, 'ro', label="Yule Leaky")
 # plt.plot(alphas, yule_r0, 'r-', label="Yule")
-plt.plot(alphas, yule_finite_outbreak_sizes, 'r-', label="Yule Simulations")
-plt.plot(alphas, nb_roots, 'ko', label="NB")
+plt.plot(ves, yule_finite_outbreak_sizes, 'r-', label="Yule Leaky Simulations")
+plt.plot(ves, nb_roots, 'ko', label="Yule All-or-Nothing")
 # plt.plot(alphas, nb_r0, 'k-', label="NB")
-plt.plot(alphas, nb_finite_outbreak_sizes, 'k-', label="NB Simulations")
-plt.title(r"$q$ Against $\alpha$")
-plt.xlabel(r"$\alpha$, Increasing Infectiousness")
+plt.plot(ves, nb_finite_outbreak_sizes, 'k-', label="Yule All-or-Nothing Simulations")
+plt.title(r"Minor Outbreak Probability agains Vaccine Efficacy$")
+plt.xlabel(r"$v$, Vaccination Efficacy")
 plt.ylabel("Finite Outbreak Probability")
 plt.legend()
 plt.show()

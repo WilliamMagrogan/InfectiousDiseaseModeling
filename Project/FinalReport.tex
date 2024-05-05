@@ -3,6 +3,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{multicol}
+
 
 %opening
 \title{Modeling Superspreading using Branching Processes and Networks}
@@ -18,11 +20,11 @@ Stochastic branching models are a useful tool for understanding the behavior of 
 
 \section*{Introduction}
 Superspreading events (SEV) and superspreaders (SS) have been identified as important processes to understanding the spreading of some pathogens such as SARS-CoV-2. SEVs are understood as instances of time with an anomalously high rate of secondary infections by a primary infector. Similarly, an SS is understood as an individual associated with a high secondary infection rate. When they occur, SEVs are rarer, but the degree of secondary infections can often lead to outbreaks simply by the number of new transmission vectors introduced. For certain pathogens, SEVs and SSs are critical to understanding their spread and outbreak behavior. While there are many mathematical tools available to model and analyze this behavior, stochastic branching processes are particularly useful.\\ \\
-Stochastic models have the advantages of being flexible, having a robust way to integrate uncertainty about model processes, and often times makes comparison with real-world data simpler. In previous works \cite{??}, branching processes have been used to model SEVs in SARS-CoV-2 data and determine that $R_0$ distributions following a negative binomial distribution fit the data well. Negative binomial distributions have a particularly high variance, which agrees with observations of human network structure. \\ \\
-Some models of network formation \cite{barabasi, yule, polya} suggest contact structures (degree distributions) may have even greater variance than, say, a negative binomial distribution. Here, we are interested in comparing superspreading in these contexts to those of standard overdispersion.
+Stochastic models have the advantages of being flexible, having a robust way to integrate uncertainty about model processes, and often times makes comparison with real-world data simpler. In previous works \cite{ijerph17176137}, branching processes have been used to model SEVs in SARS-CoV-2 data and determine that $R_0$ distributions following a negative binomial distribution fit the data well. Negative binomial distributions have a particularly high variance, which agrees with observations of human network structure. \\ \\
+Some models of network formation \cite{RevModPhys.74.47} suggest contact structures (degree distributions) may have even greater variance than, say, a negative binomial distribution. Here, we are interested in comparing superspreading in these contexts to those of standard overdispersion.
 
 \section*{Background}
-Stochastic branching processes have been used to study concrete biological processes to extinction of surnames \cite{last names guy}. This can be thought of as a Galton-Wattson process where $Z_j$ denotes the number of elements in generation $j$ and $X_{j, k}$ is the number of successors of member $k$ from generation $j$, then 
+Stochastic branching processes have been used to study concrete biological processes to extinction of surnames \cite{10.1112/blms/7.3.225}. This can be thought of as a Galton-Wattson process where $Z_j$ denotes the number of elements in generation $j$ and $X_{j, k}$ is the number of successors of member $k$ from generation $j$, then 
 \begin{equation}
 	Z_{j+1} = \sum_{k=0}^{Z_j}X_{j,k}. \label{eqn:GW}
 \end{equation}
@@ -144,10 +146,28 @@ Now, we want to consider the effect of 'leaky' versus 'all-or-nothing' vaccinati
 	\label{fig:vacccomp}
 \end{figure}
 
-Note, again, the estimates are consistently high for the EOD model for reasons mentioned earlier. For both vaccination models, when $v=0$, they are equivalent, so they are comparable for small vaccination fraction. They both begin to differ significantly. Recall that 'leaky' vaccines provide partial immunity to all people vaccinated. Fig. \ref{fig:vacccomp} seems to indicate that 'leaky' vaccines are more effective in mitigating large outbreaks under the EOD model than 'all-or-nothing' vaccines in this regime. Its rather significant difference to the point where, under a 'leaky' vaccine, a vaccination rate of $~0.45$ completely eliminates major outbreak events, but the 'all-or-nothing' vaccine still has more than a $0.5$ chance of a major outbreak at the same level.
-
+Note, again, the estimates are consistently high for the EOD model for reasons mentioned earlier. For both vaccination models, when $v=0$, they are equivalent, so they are comparable for small vaccination fraction. They both begin to differ significantly. Recall that 'leaky' vaccines provide partial immunity to all people vaccinated. Fig. \ref{fig:vacccomp} seems to indicate that 'leaky' vaccines are more effective in mitigating large outbreaks under the EOD model than 'all-or-nothing' vaccines in this regime. Its rather significant difference to the point where, under a 'leaky' vaccine, a vaccination rate of $~0.45$ completely eliminates major outbreak events, but the 'all-or-nothing' vaccine still has more than a $0.5$ chance of a major outbreak at the same level. \\ \\
+Fig. \ref{fig:vacceffcomp} shows how the EOD responds to changes in vaccine efficacy at a set vaccination fraction. The effect of vaccine efficacy appears to be identical in both models. As usual, the $q$ estimation from secondary infection probability overestimates the simulation results as discussed previously. \\ \\
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{YuleVaccEffComparison.png}
+	\caption{Response of EOD model to changes in vaccine efficacy. The 'all-or-nothing' vaccination model actually decreases the minor outbreak probability and increases major outbreak probability. The 'leaky' model increases minor outbreaks and decreases major ones. $v=0.2, \alpha=20, \beta=3$}
+	\label{fig:vacceffcomp}
+\end{figure}
 \section*{Discussion}
+Surveying the properties of the EOD model compared to standard models of overdispersion produced a number of surprising results that warrant some additional discussion.
+\subsection*{$R_0$ and Infectiousness Probability}
+The expected number of secondary infections provides an expectation for how many infections the next generation should have. If $R_0<1$, then one expects that for any outbreak, $Z_{j+1}\approx R_0 Z_j$ and $Z_j~E^{(R_0-1)j}$ will eventually decay, implying all outbreaks will end and be minor ones. This is why $R_0>$ is required for interesting behavior in outbreak probabilities. Comparing EOD with NB models, Fig. \ref{fig:r0prog} indicates that for the parameter space $\beta = 3, \alpha\in (12, 20)$, EOD and NB have very similar $R_0$ values, but Fig. \ref{fig:minoroutbreaks} indicates they have drastically differences in outbreak probabilities. Note that the NB model used has $\sigma^2=100$, and the results were similar for even higher dispersion. This indicates that there is something fundamental to the Yule contact structure in the EOD model that permits major outbreaks to occur even at relatively small $R_0$, demonstrating that $R_0$ is more important to dynamics of minor outbreaks rather than their occurrence.
+\subsection*{Outbreak Probabilities}
+It is worth mentioning something important about the contact structure; despite tuning the distributions to have the same mean number of contacts, NB RVs are supported at $k=0$, but Yule RVs are not. This means the mode for a Yule RV is $1$ and not $0$ as with a NB RV. This is common for network models with preferential attachment mechanisms, and is more responsible for the disparity in minor outbreak probabilities as in Fig. \ref{fig:minoroutbreaks}. This can be seen from the OGF formalism; recall that minor outbreak probability, $q$ is determined from $G(q)-q=0$. If $Pr(Yule(2)=0)=0$, then in absence of vaccinations, the chance of secondary infections is very low when the pathogen is very infectious. For an NB contact structure, the chance there are $0$ secondary infections is very high. Then, regardless of the secondary infection structure, the intersection of $G(q)$ and $q$ will necessarily be lower for EOD than NB. Hence, the unbounded variance contributes less than the fact that the mode of the secondary infections in the EOD model is $1$ rather than $0$. 
+\subsection*{Effects of Vaccination}
+Comparing the two vaccination models in the EOD model, the main differentiating factor is fraction of the population that is vaccinated. The vaccine efficacy appears to behave almost identically and linearly between the two models. The best explanation for the differences is that EOD is sensitive to the infectiousness probability. In the leaky model, vaccination primarily affects the effective infectiousness of the pathgen while the 'all-or-nothing' model affects how many effective secondary infections there are. Since the primary mode of outbreaks is in infrequent, but large numbers of secondary infections, and 'all-or-nothing' model will only fractionally reduce the secondary infections, and not mitigate the compounding effects very much, whereas the 'leaky' model will.\\ \\
+This breif survey highlights some interesting features of a contact structure motivated from Network Theory in comparison to standard overdispersion models used in branching processes. While the relevance of the EOD model to real-world epidemic data has yet to be examined, it may serve as an effective alternative in cases where the pathogen spreads primarily through network structures. 
 \section*{References}
+\bibliographystyle{plain} % We choose the "plain" reference style
+\bibliography{refs} % Entries are in the refs.bib file
 \section*{Appendix}
-Code used for simulations and figures available on github  \href{https://github.com/WilliamMagrogan/InfectiousDiseaseModeling}{here}, or you can also email the author at william.magrogan@colorado.edu.
+Code used for simulations and figures available on github  \href{https://github.com/WilliamMagrogan/InfectiousDiseaseModeling}{here}, or you can also email the author at william.magrogan@colorado.edu.\\ \\
+To illustrate the difficulty of explicitly defining the general secondary infection distribution for the EOD model, note the following. Once vaccination is involved, the secondary infections behave differently on the vaccinated and unvaccinated fractions of the population. This separates the secondary infection RV into the sum of two unlike RVs. On top of the complicated summations of special functions, the final expression for the secondary expression distribution necessitates a convolutional integral.
+
 \end{document}
